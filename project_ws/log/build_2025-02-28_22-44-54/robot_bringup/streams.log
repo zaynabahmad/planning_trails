@@ -1,0 +1,25 @@
+[5.890s] Invoking command in '/home/zaynap/project_ws/src/robot_bringup': PYTHONPATH=/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_bringup build --build-base /home/zaynap/project_ws/build/robot_bringup/build install --record /home/zaynap/project_ws/build/robot_bringup/install.log --single-version-externally-managed install_data
+[6.051s] /home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[6.052s]   warnings.warn(msg)
+[6.182s] running egg_info
+[6.202s] writing ../../build/robot_bringup/robot_bringup.egg-info/PKG-INFO
+[6.202s] writing dependency_links to ../../build/robot_bringup/robot_bringup.egg-info/dependency_links.txt
+[6.203s] writing requirements to ../../build/robot_bringup/robot_bringup.egg-info/requires.txt
+[6.203s] writing top-level names to ../../build/robot_bringup/robot_bringup.egg-info/top_level.txt
+[6.246s] reading manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[6.378s] writing manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[6.379s] running build
+[6.380s] running build_py
+[6.380s] copying robot_bringup/__init__.py -> /home/zaynap/project_ws/build/robot_bringup/build/lib/robot_bringup
+[6.382s] running install
+[6.410s] running install_lib
+[6.439s] running install_data
+[6.439s] copying resource/robot_bringup -> /home/zaynap/project_ws/install/robot_bringup/share/ament_index/resource_index/packages
+[6.439s] copying package.xml -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup
+[6.439s] copying launch/bringup_robot.launch.py -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch
+[6.464s] running install_egg_info
+[6.508s] removing '/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[6.508s] Copying ../../build/robot_bringup/robot_bringup.egg-info to /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup-0.0.0-py3.10.egg-info
+[6.527s] running install_scripts
+[6.699s] writing list of installed files to '/home/zaynap/project_ws/build/robot_bringup/install.log'
+[6.725s] Invoked command in '/home/zaynap/project_ws/src/robot_bringup' returned '0': PYTHONPATH=/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_bringup build --build-base /home/zaynap/project_ws/build/robot_bringup/build install --record /home/zaynap/project_ws/build/robot_bringup/install.log --single-version-externally-managed install_data

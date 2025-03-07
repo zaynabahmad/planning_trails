@@ -1,0 +1,66 @@
+[0.017s] Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/turtlebot3_teleop:/home/zaynap/project_ws/install/turtlebot3_example:/home/zaynap/project_ws/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
+[0.222s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.694s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.843s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.844s] -- Added test 'lint_cmake' to check CMake code style
+[0.845s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.848s] -- Added test 'xmllint' to check XML markup files
+[0.849s] -- Configuring done
+[0.904s] -- Generating done
+[0.906s] -- Build files have been written to: /home/zaynap/project_ws/build/model_description
+[0.925s] Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/turtlebot3_teleop:/home/zaynap/project_ws/install/turtlebot3_example:/home/zaynap/project_ws/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
+[0.935s] Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/turtlebot3_teleop:/home/zaynap/project_ws/install/turtlebot3_example:/home/zaynap/project_ws/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description
+[0.942s] -- Install configuration: ""
+[0.942s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds
+[0.942s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install
+[0.942s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/setup.bash
+[0.942s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/setup.ps1
+[0.942s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/_local_setup_util_ps1.py
+[0.942s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/_local_setup_util_sh.py
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/local_setup.bash
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/local_setup.ps1
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/COLCON_IGNORE
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/setup.zsh
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/local_setup.sh
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/.colcon_install_layout
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/setup.sh
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/local_setup.zsh
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/build_2025-03-01_01-52-05
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/build_2025-03-01_01-52-05/events.log
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/build_2025-03-01_01-52-05/logger_all.log
+[0.943s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/latest_build
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/COLCON_IGNORE
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/latest
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/world.sdf
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/build
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/build/.built_by
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/build/COLCON_IGNORE
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/model.config
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails/turtlebot3_burger.jpg
+[0.944s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/burger_base.stl
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/left_tire.stl
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/right_tire.stl
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/lds.stl
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/model.sdf
+[0.945s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//rviz
+[0.945s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//rviz/model.rviz
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/package_run_dependencies/model_description
+[0.945s] -- Installing: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/parent_prefix_path/model_description
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.sh
+[0.945s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.dsv
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.sh
+[0.945s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.dsv
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.bash
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.sh
+[0.945s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.zsh
+[0.946s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.dsv
+[0.946s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/package.dsv
+[0.946s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/packages/model_description
+[0.946s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig.cmake
+[0.946s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig-version.cmake
+[0.946s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/package.xml
+[0.947s] Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/turtlebot3_teleop:/home/zaynap/project_ws/install/turtlebot3_example:/home/zaynap/project_ws/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description

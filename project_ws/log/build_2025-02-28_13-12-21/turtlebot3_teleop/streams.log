@@ -1,0 +1,28 @@
+[1.284s] Invoking command in '/home/zaynap/project_ws/src/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/zaynap/project_ws/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/zaynap/project_ws/build/turtlebot3_teleop/build install --record /home/zaynap/project_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed install_data
+[1.467s] /home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[1.467s]   warnings.warn(msg)
+[1.619s] running egg_info
+[1.647s] writing ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+[1.648s] writing dependency_links to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+[1.648s] writing entry points to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+[1.648s] writing requirements to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+[1.648s] writing top-level names to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+[1.696s] reading manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[1.698s] writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[1.698s] running build
+[1.698s] running build_py
+[1.698s] copying turtlebot3_teleop/__init__.py -> /home/zaynap/project_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[1.699s] copying turtlebot3_teleop/script/teleop_keyboard.py -> /home/zaynap/project_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[1.699s] copying turtlebot3_teleop/script/__init__.py -> /home/zaynap/project_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[1.699s] running install
+[1.706s] running install_lib
+[1.729s] running install_data
+[1.729s] copying resource/turtlebot3_teleop -> /home/zaynap/project_ws/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[1.729s] copying package.xml -> /home/zaynap/project_ws/install/turtlebot3_teleop/share/turtlebot3_teleop
+[1.729s] running install_egg_info
+[1.752s] removing '/home/zaynap/project_ws/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop-2.1.5-py3.10.egg-info' (and everything under it)
+[1.753s] Copying ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/zaynap/project_ws/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop-2.1.5-py3.10.egg-info
+[1.753s] running install_scripts
+[1.933s] Installing teleop_keyboard script to /home/zaynap/project_ws/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[1.934s] writing list of installed files to '/home/zaynap/project_ws/build/turtlebot3_teleop/install.log'
+[1.963s] Invoked command in '/home/zaynap/project_ws/src/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/zaynap/project_ws/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/zaynap/project_ws/build/turtlebot3_teleop/build install --record /home/zaynap/project_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed install_data

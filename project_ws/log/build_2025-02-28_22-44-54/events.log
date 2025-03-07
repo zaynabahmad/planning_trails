@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.000301] (model_description) JobQueued: {'identifier': 'model_description', 'dependencies': OrderedDict()}
+[0.000480] (robot_bringup) JobQueued: {'identifier': 'robot_bringup', 'dependencies': OrderedDict()}
+[0.000724] (model_description) JobStarted: {'identifier': 'model_description'}
+[0.016384] (robot_bringup) JobStarted: {'identifier': 'robot_bringup'}
+[0.036620] (model_description) JobProgress: {'identifier': 'model_description', 'progress': 'cmake'}
+[0.062238] (model_description) JobProgress: {'identifier': 'model_description', 'progress': 'build'}
+[0.063214] (model_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zaynap/project_ws/build/model_description', '--', '-j8', '-l8'], 'cwd': '/home/zaynap/project_ws/build/model_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'zaynap'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zaynap'), ('OLDPWD', '/home/zaynap'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '2206'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zaynap'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zaynap'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/zaynap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zaynap:@/tmp/.ICE-unix/2178,unix/zaynap:/tmp/.ICE-unix/2178'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e1c2f1_2e9c_43cf_a43d_57ad4c6a39f1'), ('GNOME_SETUP_DISPLAY', ':1'), ('MATLAB_JAVA', '/usr/lib/jvm/java-11-openjdk-amd64/'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YZLM22'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.142'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_SYSTEM_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/ign-gazebo-6/plugins'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zaynap/project_ws/build/model_description'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100895] (-) TimerEvent: {}
+[0.203517] (-) TimerEvent: {}
+[0.303750] (-) TimerEvent: {}
+[0.403981] (-) TimerEvent: {}
+[0.435565] (model_description) CommandEnded: {'returncode': 0}
+[0.458310] (model_description) JobProgress: {'identifier': 'model_description', 'progress': 'install'}
+[0.467314] (model_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zaynap/project_ws/build/model_description'], 'cwd': '/home/zaynap/project_ws/build/model_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'zaynap'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zaynap'), ('OLDPWD', '/home/zaynap'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '2206'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zaynap'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zaynap'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/zaynap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zaynap:@/tmp/.ICE-unix/2178,unix/zaynap:/tmp/.ICE-unix/2178'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e1c2f1_2e9c_43cf_a43d_57ad4c6a39f1'), ('GNOME_SETUP_DISPLAY', ':1'), ('MATLAB_JAVA', '/usr/lib/jvm/java-11-openjdk-amd64/'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YZLM22'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.142'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_SYSTEM_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/ign-gazebo-6/plugins'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zaynap/project_ws/build/model_description'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.474404] (model_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.501041] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds\n'}
+[0.501374] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/world.sdf\n'}
+[0.501450] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models\n'}
+[0.501513] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/model.config\n'}
+[0.501574] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails\n'}
+[0.501648] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails/2.jpg\n'}
+[0.501713] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails/4.jpg\n'}
+[0.501772] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails/3.jpg\n'}
+[0.501830] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails/turtlebot3_burger.jpg\n'}
+[0.501888] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails/1.jpg\n'}
+[0.501945] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes\n'}
+[0.502003] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/user_rail.dae\n'}
+[0.502060] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/top_plate.dae\n'}
+[0.502144] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/top_chassis.dae\n'}
+[0.502202] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/jpl04_arch_nosensor.stl\n'}
+[0.502259] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/burger_base.stl\n'}
+[0.502317] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/base_link.dae\n'}
+[0.502373] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/spotlight.dae\n'}
+[0.502430] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/left_tire.stl\n'}
+[0.502486] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/bumper.dae\n'}
+[0.502543] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/realsense.dae\n'}
+[0.502600] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/wheel.dae\n'}
+[0.502752] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/right_tire.stl\n'}
+[0.502807] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/VLP16_base_1.dae\n'}
+[0.502860] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/lds.stl\n'}
+[0.502913] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/VLP16_base_2.dae\n'}
+[0.502965] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/VLP16_scan.dae\n'}
+[0.503019] (model_description) StdoutLine: {'line': b'-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/model.sdf\n'}
+[0.503072] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/materials\n'}
+[0.503138] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/materials/textures\n'}
+[0.503193] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/materials/textures/spotlight.jpg\n'}
+[0.503246] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/materials/textures/realsense_diffuse.jpg\n'}
+[0.503300] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/package_run_dependencies/model_description\n'}
+[0.503354] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/parent_prefix_path/model_description\n'}
+[0.503407] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.sh\n'}
+[0.503471] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.dsv\n'}
+[0.503530] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.sh\n'}
+[0.503584] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.dsv\n'}
+[0.503654] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.bash\n'}
+[0.503711] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.sh\n'}
+[0.503776] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.zsh\n'}
+[0.503839] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.dsv\n'}
+[0.503899] (model_description) StdoutLine: {'line': b'-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/package.dsv\n'}
+[0.504044] (-) TimerEvent: {}
+[0.524743] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/packages/model_description\n'}
+[0.524918] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig.cmake\n'}
+[0.524989] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig-version.cmake\n'}
+[0.525048] (model_description) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/package.xml\n'}
+[0.526293] (model_description) CommandEnded: {'returncode': 0}
+[0.558240] (model_description) JobEnded: {'identifier': 'model_description', 'rc': 0}
+[0.604128] (-) TimerEvent: {}
+[0.704382] (-) TimerEvent: {}
+[0.804669] (-) TimerEvent: {}
+[0.905035] (-) TimerEvent: {}
+[1.005710] (-) TimerEvent: {}
+[1.106262] (-) TimerEvent: {}
+[1.206661] (-) TimerEvent: {}
+[1.307530] (-) TimerEvent: {}
+[1.408171] (-) TimerEvent: {}
+[1.508835] (-) TimerEvent: {}
+[1.609493] (-) TimerEvent: {}
+[1.710092] (-) TimerEvent: {}
+[1.810687] (-) TimerEvent: {}
+[1.911262] (-) TimerEvent: {}
+[2.011888] (-) TimerEvent: {}
+[2.112478] (-) TimerEvent: {}
+[2.213091] (-) TimerEvent: {}
+[2.313771] (-) TimerEvent: {}
+[2.414344] (-) TimerEvent: {}
+[2.514938] (-) TimerEvent: {}
+[2.615504] (-) TimerEvent: {}
+[2.716081] (-) TimerEvent: {}
+[2.816704] (-) TimerEvent: {}
+[2.917041] (-) TimerEvent: {}
+[3.017645] (-) TimerEvent: {}
+[3.118128] (-) TimerEvent: {}
+[3.218557] (-) TimerEvent: {}
+[3.319356] (-) TimerEvent: {}
+[3.420112] (-) TimerEvent: {}
+[3.520820] (-) TimerEvent: {}
+[3.621582] (-) TimerEvent: {}
+[3.722382] (-) TimerEvent: {}
+[3.823188] (-) TimerEvent: {}
+[3.923923] (-) TimerEvent: {}
+[4.024676] (-) TimerEvent: {}
+[4.125325] (-) TimerEvent: {}
+[4.226020] (-) TimerEvent: {}
+[4.326742] (-) TimerEvent: {}
+[4.427543] (-) TimerEvent: {}
+[4.528311] (-) TimerEvent: {}
+[4.629048] (-) TimerEvent: {}
+[4.729754] (-) TimerEvent: {}
+[4.830415] (-) TimerEvent: {}
+[4.931035] (-) TimerEvent: {}
+[5.031716] (-) TimerEvent: {}
+[5.132338] (-) TimerEvent: {}
+[5.232873] (-) TimerEvent: {}
+[5.333244] (-) TimerEvent: {}
+[5.433813] (-) TimerEvent: {}
+[5.534117] (-) TimerEvent: {}
+[5.634458] (-) TimerEvent: {}
+[5.734921] (-) TimerEvent: {}
+[5.835541] (-) TimerEvent: {}
+[5.905336] (robot_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_bringup', 'build', '--build-base', '/home/zaynap/project_ws/build/robot_bringup/build', 'install', '--record', '/home/zaynap/project_ws/build/robot_bringup/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/zaynap/project_ws/src/robot_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'zaynap', 'LC_TIME': 'ar_EG.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/zaynap', 'OLDPWD': '/home/zaynap', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'SYSTEMD_EXEC_PID': '2206', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'zaynap', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zaynap', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/zaynap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zaynap:@/tmp/.ICE-unix/2178,unix/zaynap:/tmp/.ICE-unix/2178', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/10e1c2f1_2e9c_43cf_a43d_57ad4c6a39f1', 'GNOME_SETUP_DISPLAY': ':1', 'MATLAB_JAVA': '/usr/lib/jvm/java-11-openjdk-amd64/', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YZLM22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.142', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'IGN_GAZEBO_SYSTEM_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/ign-gazebo-6/plugins', 'LC_NAME': 'ar_EG.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/zaynap/project_ws/build/robot_bringup', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[5.935624] (-) TimerEvent: {}
+[6.035897] (-) TimerEvent: {}
+[6.068183] (robot_bringup) StderrLine: {'line': b"/home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[6.068435] (robot_bringup) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[6.135991] (-) TimerEvent: {}
+[6.197045] (robot_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[6.218521] (robot_bringup) StdoutLine: {'line': b'writing ../../build/robot_bringup/robot_bringup.egg-info/PKG-INFO\n'}
+[6.218979] (robot_bringup) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_bringup/robot_bringup.egg-info/dependency_links.txt\n'}
+[6.219289] (robot_bringup) StdoutLine: {'line': b'writing requirements to ../../build/robot_bringup/robot_bringup.egg-info/requires.txt\n'}
+[6.219438] (robot_bringup) StdoutLine: {'line': b'writing top-level names to ../../build/robot_bringup/robot_bringup.egg-info/top_level.txt\n'}
+[6.236071] (-) TimerEvent: {}
+[6.263040] (robot_bringup) StdoutLine: {'line': b"reading manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'\n"}
+[6.336290] (-) TimerEvent: {}
+[6.394644] (robot_bringup) StdoutLine: {'line': b"writing manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'\n"}
+[6.395604] (robot_bringup) StdoutLine: {'line': b'running build\n'}
+[6.396134] (robot_bringup) StdoutLine: {'line': b'running build_py\n'}
+[6.396770] (robot_bringup) StdoutLine: {'line': b'copying robot_bringup/__init__.py -> /home/zaynap/project_ws/build/robot_bringup/build/lib/robot_bringup\n'}
+[6.398475] (robot_bringup) StdoutLine: {'line': b'running install\n'}
+[6.426724] (robot_bringup) StdoutLine: {'line': b'running install_lib\n'}
+[6.436370] (-) TimerEvent: {}
+[6.455424] (robot_bringup) StdoutLine: {'line': b'running install_data\n'}
+[6.455674] (robot_bringup) StdoutLine: {'line': b'copying resource/robot_bringup -> /home/zaynap/project_ws/install/robot_bringup/share/ament_index/resource_index/packages\n'}
+[6.455868] (robot_bringup) StdoutLine: {'line': b'copying package.xml -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup\n'}
+[6.456020] (robot_bringup) StdoutLine: {'line': b'copying launch/bringup_robot.launch.py -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch\n'}
+[6.480080] (robot_bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.524517] (robot_bringup) StdoutLine: {'line': b"removing '/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.524753] (robot_bringup) StdoutLine: {'line': b'Copying ../../build/robot_bringup/robot_bringup.egg-info to /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup-0.0.0-py3.10.egg-info\n'}
+[6.536631] (-) TimerEvent: {}
+[6.543323] (robot_bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[6.636704] (-) TimerEvent: {}
+[6.715847] (robot_bringup) StdoutLine: {'line': b"writing list of installed files to '/home/zaynap/project_ws/build/robot_bringup/install.log'\n"}
+[6.736819] (-) TimerEvent: {}
+[6.741718] (robot_bringup) CommandEnded: {'returncode': 0}
+[6.748056] (robot_bringup) JobEnded: {'identifier': 'robot_bringup', 'rc': 0}
+[6.748698] (-) EventReactorShutdown: {}

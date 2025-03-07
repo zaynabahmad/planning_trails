@@ -1,0 +1,32 @@
+[0.039s] Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
+[0.338s] Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
+[0.349s] Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description
+[0.358s] -- Install configuration: ""
+[0.358s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//worlds
+[0.358s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/world.sdf
+[0.396s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models
+[0.397s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/model.config
+[0.397s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails
+[0.427s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails/turtlebot3_burger.jpg
+[0.428s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes
+[0.472s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/burger_base.stl
+[0.473s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/left_tire.stl
+[0.473s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/right_tire.stl
+[0.473s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/lds.stl
+[0.473s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description//models/model.sdf
+[0.473s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/package_run_dependencies/model_description
+[0.473s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/parent_prefix_path/model_description
+[0.473s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.sh
+[0.473s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.dsv
+[0.474s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.sh
+[0.474s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.dsv
+[0.474s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.bash
+[0.474s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.sh
+[0.474s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.zsh
+[0.474s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.dsv
+[0.474s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/package.dsv
+[0.474s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/packages/model_description
+[0.474s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig.cmake
+[0.475s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig-version.cmake
+[0.475s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/package.xml
+[0.476s] Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description

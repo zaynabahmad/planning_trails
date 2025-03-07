@@ -1,0 +1,20 @@
+[0.014s] Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
+[0.246s] Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
+[0.256s] Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description
+[0.263s] -- Install configuration: ""
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/package_run_dependencies/model_description
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/parent_prefix_path/model_description
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.sh
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.dsv
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.sh
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.dsv
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.bash
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.sh
+[0.263s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.zsh
+[0.264s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.dsv
+[0.264s] -- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/package.dsv
+[0.264s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/packages/model_description
+[0.264s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig.cmake
+[0.264s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig-version.cmake
+[0.264s] -- Up-to-date: /home/zaynap/project_ws/install/model_description/share/model_description/package.xml
+[0.265s] Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description

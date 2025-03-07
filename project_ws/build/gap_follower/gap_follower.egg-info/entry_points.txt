@@ -1,0 +1,3 @@
+[console_scripts]
+naive_gap_follower = gap_follower.naive_gap_follower:main
+optimized_gap_follower = gap_follower.optimized_gap_follower:main
