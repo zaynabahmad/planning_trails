@@ -14,7 +14,7 @@ class OptimizedGapFollower(Node):
         self.max_speed = 1.6
         self.max_angle_vel = 1.0
         self.r_b = 0.5  # Safety bubble radius
-        self.n = 30     # Minimum gap size
+        self.n = 25     # Minimum gap size
         self.robot_yaw = 0.0  # Current yaw from odometry
         self.latest_heading_error = 0.0
         
@@ -27,7 +27,7 @@ class OptimizedGapFollower(Node):
         self.odom_sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
         
-        # Create a timer that updates the velocity every 2 seconds.
+        #  a timer that updates the velocity every 2 seconds.
         # Uncomment the timer if you wish to use gradual updates.
         # self.timer = self.create_timer(2.0, self.update_robot_movement)
     
@@ -42,7 +42,8 @@ class OptimizedGapFollower(Node):
         return 0.0, 0.0, yaw
 
     def lidar_callback(self, scan_msg):
-        """Processes LiDAR data and follows the largest gap."""
+        """Processes LiDAR data and follows the largest gap.""" 
+        # try to get just from 0 to 180 ranges 
         ranges = list(scan_msg.ranges)
         total_rays = len(ranges)
         start_idx = 0  
@@ -54,11 +55,47 @@ class OptimizedGapFollower(Node):
         angle_inc = scan_msg.angle_increment
         
         # Step 1: Apply Safety Bubble
-        nearest_idx = np.argmin(ranges)  # Index of nearest obstacle
-        nearest_dist = ranges[nearest_idx]  # Distance to nearest obstacle
-        if nearest_dist < 2.0:  # Only apply if the nearest object is closer than 2m
-            safety_threshold = nearest_dist + self.r_b  # Define a clearance distance
-            ranges[ranges <= safety_threshold] = 0  # Mark all points within this radius as obstacles
+        # nearest_idx = np.argmin(ranges)  # Index of nearest obstacle
+        # nearest_dist = ranges[nearest_idx]  # Distance to nearest obstacle
+
+        # get just the finite values 
+        finite_mask = np.isfinite(ranges)
+        if np.any(finite_mask):
+            # Only consider finite measurements for finding the nearest obstacle.
+            finite_ranges = ranges[finite_mask]
+            # Get the index among the finite values.
+            min_index_finite = np.argmin(finite_ranges)
+            # Map this index back to the full array.
+            finite_indices = np.nonzero(finite_mask)[0]
+            nearest_idx = finite_indices[min_index_finite]
+            nearest_dist = finite_ranges[min_index_finite]
+        else:
+            # If all values are infinite, assume no obstacle is detected.
+            nearest_idx = None
+            nearest_dist = np.inf
+
+        # if nearest_dist < 2.0:  #  apply if the nearest object is closer than 2m
+        #     safety_threshold = nearest_dist + self.r_b  # Define a clearance distance
+        #     ranges[ranges <= safety_threshold] = 0  # Mark all points within this radius as obstacles  0 obstical , 1 free 
+
+        # make it a buble not just a threshold 
+
+        if nearest_idx is not None and nearest_dist < 2.0:
+        # Calculate the angular width of the bubble using geometry:
+        # For a bubble radius r_b and nearest distance d, the angle is:
+        #    bubble_angle = arcsin(r_b/d)
+            if nearest_dist > self.r_b:
+                bubble_angle = math.asin(self.r_b / nearest_dist)
+            else:
+                bubble_angle = math.pi / 2  # If too close, remove a wide window.
+        
+            # Convert this angular width to an index offset.
+            bubble_indices = int(bubble_angle / angle_inc)
+            lower_bound = max(0, nearest_idx - bubble_indices)
+            upper_bound = min(len(ranges) - 1, nearest_idx + bubble_indices)
+            # Mark all points within the bubble as obstacles (set to 0).
+            ranges[lower_bound:upper_bound + 1] = 0
+
         
         # Step 2: Identify Free Space
         free_space = np.where(ranges > 0, 1, 0)
@@ -82,11 +119,11 @@ class OptimizedGapFollower(Node):
             # Step 4: Select Best Point in the Largest Gap
             best_heading = self.select_best_point(gap_start, gap_end, angle_min, angle_inc, ranges)
             # Compute the heading error relative to the robot's yaw.
-            # If your sensor or robot frame is mounted differently, you might add an offset here.
+            # heeereeee
             heading_error = best_heading - self.robot_yaw
             heading_error = math.atan2(math.sin(heading_error), math.cos(heading_error))
             
-            # Compute angular velocity based on steering control
+            # Compute angular velocity  -->on steering control
             computed_ang_vel = self.steering_control(heading_error)
             twist_msg.linear.x = self.max_speed
             twist_msg.angular.z = computed_ang_vel
@@ -123,19 +160,19 @@ class OptimizedGapFollower(Node):
         return gaps
     
     def select_best_point(self, gap_start, gap_end, angle_min, angle_inc, ranges):
-        # Compute the center of the largest gap.
+        # mid point
         mid_gap_idx = (gap_start + gap_end) // 2
         best_heading = angle_min + (mid_gap_idx * angle_inc)
         # Return best_heading in radians directly.
         return best_heading
 
     def steering_control(self, heading_error, k_p=0.3):
-        # Use a higher gain if the error is large.
+        # dynamic gain daaa uta3adl
         k_p = 0.5 if abs(heading_error) > 0.5 else 0.3
         angular_vel = k_p * heading_error
         return max(min(angular_vel, self.max_angle_vel), -self.max_angle_vel)
     
-    def update_robot_movement(self):
+    def update_robot_movement(self):  # da msh shaghal now 
         """
         Gradually update the angular velocity in steps.
         This callback is triggered every 2 seconds.

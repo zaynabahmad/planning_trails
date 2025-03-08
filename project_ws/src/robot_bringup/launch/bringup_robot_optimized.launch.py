@@ -69,17 +69,24 @@ def generate_launch_description():
         arguments=['0', '0', '0', '0', '0', '0', 'odom', 'turtlebot3_burger/base'],
         output='screen'
     ),
+        # Node(
+        #     package='rviz2',
+        #     executable='rviz2',
+        #     name='rviz2',
+        #     arguments=['-d', rviz_config_file],
+        #     output='screen'
+        # ),
+    # Node(
+    #     package='gap_follower',
+    #     executable='optimized_gap_follower',
+    #     name='optimized_gap_follower',
+    #     output='screen'
+    # )
+
         Node(
-            package='rviz2',
-            executable='rviz2',
-            name='rviz2',
-            arguments=['-d', rviz_config_file],
-            output='screen'
-        ),
-    Node(
         package='gap_follower',
-        executable='optimized_gap_follower',
-        name='optimized_gap_follower',
+        executable='optimized_gap_follower2',
+        name='optimized_gap_follower2',
         output='screen'
     )
 

@@ -189,6 +189,8 @@
         <model name="zigzag_track">
       <!-- Make the track static so it doesn't fall or move -->
       <static>true</static>
+      <link name="track">
+
 
       <!-- ================================
            Segment 1: 2.5 m straight
@@ -199,10 +201,9 @@
 
       <!-- Left Wall, Segment 1 -->
       <!-- Center of segment at x=1.25, offset +0.5 in y -->
-      <link name="left_wall_seg1">
         <pose>1.0 0.5 0.5 0 0 0</pose>
         <!-- Visual only, no collision -->
-        <visual name="visual">
+        <visual name="left_wall_seg1_visual">
           <geometry>
             <!-- 2.5 m long, 0.1 m thick, 1 m high -->
             <box><size>2.5 0.1 1</size></box>
@@ -255,6 +256,7 @@
             <diffuse>0.7 0.7 0.7 1</diffuse>
           </material>
         </visual>
+
       </link>
 
       <!-- Right Wall, Segment 2 -->

@@ -14,7 +14,7 @@ class OptimizedGapFollower(Node):
         self.max_speed = 1.6
         self.max_angle_vel = 1.0
         self.r_b = 0.5  # Safety bubble radius
-        self.n = 30     # Minimum gap size
+        self.n = 25     # Minimum gap size
         self.robot_yaw = 0.0  # Current yaw from odometry
         self.latest_heading_error = 0.0
         
@@ -55,11 +55,47 @@ class OptimizedGapFollower(Node):
         angle_inc = scan_msg.angle_increment
         
         # Step 1: Apply Safety Bubble
-        nearest_idx = np.argmin(ranges)  # Index of nearest obstacle
-        nearest_dist = ranges[nearest_idx]  # Distance to nearest obstacle
-        if nearest_dist < 2.0:  #  apply if the nearest object is closer than 2m
-            safety_threshold = nearest_dist + self.r_b  # Define a clearance distance
-            ranges[ranges <= safety_threshold] = 0  # Mark all points within this radius as obstacles  0 obstical , 1 free 
+        # nearest_idx = np.argmin(ranges)  # Index of nearest obstacle
+        # nearest_dist = ranges[nearest_idx]  # Distance to nearest obstacle
+
+        # get just the finite values 
+        finite_mask = np.isfinite(ranges)
+        if np.any(finite_mask):
+            # Only consider finite measurements for finding the nearest obstacle.
+            finite_ranges = ranges[finite_mask]
+            # Get the index among the finite values.
+            min_index_finite = np.argmin(finite_ranges)
+            # Map this index back to the full array.
+            finite_indices = np.nonzero(finite_mask)[0]
+            nearest_idx = finite_indices[min_index_finite]
+            nearest_dist = finite_ranges[min_index_finite]
+        else:
+            # If all values are infinite, assume no obstacle is detected.
+            nearest_idx = None
+            nearest_dist = np.inf
+
+        # if nearest_dist < 2.0:  #  apply if the nearest object is closer than 2m
+        #     safety_threshold = nearest_dist + self.r_b  # Define a clearance distance
+        #     ranges[ranges <= safety_threshold] = 0  # Mark all points within this radius as obstacles  0 obstical , 1 free 
+
+        # make it a buble not just a threshold 
+
+        if nearest_idx is not None and nearest_dist < 2.0:
+        # Calculate the angular width of the bubble using geometry:
+        # For a bubble radius r_b and nearest distance d, the angle is:
+        #    bubble_angle = arcsin(r_b/d)
+            if nearest_dist > self.r_b:
+                bubble_angle = math.asin(self.r_b / nearest_dist)
+            else:
+                bubble_angle = math.pi / 2  # If too close, remove a wide window.
+        
+            # Convert this angular width to an index offset.
+            bubble_indices = int(bubble_angle / angle_inc)
+            lower_bound = max(0, nearest_idx - bubble_indices)
+            upper_bound = min(len(ranges) - 1, nearest_idx + bubble_indices)
+            # Mark all points within the bubble as obstacles (set to 0).
+            ranges[lower_bound:upper_bound + 1] = 0
+
         
         # Step 2: Identify Free Space
         free_space = np.where(ranges > 0, 1, 0)

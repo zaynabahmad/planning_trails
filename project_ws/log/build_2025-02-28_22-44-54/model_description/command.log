@@ -1,4 +1,0 @@
-Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
-Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
-Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description
-Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description

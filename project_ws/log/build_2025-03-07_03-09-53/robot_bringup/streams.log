@@ -1,0 +1,33 @@
+[1.851s] Invoking command in '/home/zaynap/project_ws/src/robot_bringup': PYTHONPATH=/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_bringup build --build-base /home/zaynap/project_ws/build/robot_bringup/build install --record /home/zaynap/project_ws/build/robot_bringup/install.log --single-version-externally-managed install_data
+[2.134s] /home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[2.134s]   warnings.warn(msg)
+[2.347s] running egg_info
+[2.379s] creating ../../build/robot_bringup/robot_bringup.egg-info
+[2.379s] writing ../../build/robot_bringup/robot_bringup.egg-info/PKG-INFO
+[2.380s] writing dependency_links to ../../build/robot_bringup/robot_bringup.egg-info/dependency_links.txt
+[2.380s] writing requirements to ../../build/robot_bringup/robot_bringup.egg-info/requires.txt
+[2.381s] writing top-level names to ../../build/robot_bringup/robot_bringup.egg-info/top_level.txt
+[2.381s] writing manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[2.444s] reading manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[2.446s] writing manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[2.446s] running build
+[2.446s] running build_py
+[2.446s] creating /home/zaynap/project_ws/build/robot_bringup/build/lib/robot_bringup
+[2.446s] copying robot_bringup/__init__.py -> /home/zaynap/project_ws/build/robot_bringup/build/lib/robot_bringup
+[2.447s] running install
+[2.455s] running install_lib
+[2.487s] creating /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup
+[2.488s] copying /home/zaynap/project_ws/build/robot_bringup/build/lib/robot_bringup/__init__.py -> /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup
+[2.488s] byte-compiling /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup/__init__.py to __init__.cpython-310.pyc
+[2.489s] running install_data
+[2.489s] creating /home/zaynap/project_ws/install/robot_bringup/share/ament_index/resource_index/packages
+[2.489s] copying resource/robot_bringup -> /home/zaynap/project_ws/install/robot_bringup/share/ament_index/resource_index/packages
+[2.490s] copying package.xml -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup
+[2.490s] creating /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch
+[2.491s] copying launch/bringup_robot.launch.py -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch
+[2.491s] copying launch/bringup_robot_optimized.launch.py -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch
+[2.492s] running install_egg_info
+[2.526s] Copying ../../build/robot_bringup/robot_bringup.egg-info to /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup-0.0.0-py3.10.egg-info
+[2.527s] running install_scripts
+[2.796s] writing list of installed files to '/home/zaynap/project_ws/build/robot_bringup/install.log'
+[2.856s] Invoked command in '/home/zaynap/project_ws/src/robot_bringup' returned '0': PYTHONPATH=/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_bringup build --build-base /home/zaynap/project_ws/build/robot_bringup/build install --record /home/zaynap/project_ws/build/robot_bringup/install.log --single-version-externally-managed install_data
