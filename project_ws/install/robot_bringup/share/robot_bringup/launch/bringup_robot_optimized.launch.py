@@ -83,10 +83,17 @@ def generate_launch_description():
     #     output='screen'
     # )
 
-        Node(
+    #     Node(
+    #     package='gap_follower',
+    #     executable='optimized_gap_follower2',
+    #     name='optimized_gap_follower2',
+    #     output='screen'
+    # )
+
+          Node(
         package='gap_follower',
-        executable='optimized_gap_follower2',
-        name='optimized_gap_follower2',
+        executable='optimized_gapfolloweSM',
+        name='optimized_gapfolloweSM',
         output='screen'
     )
 

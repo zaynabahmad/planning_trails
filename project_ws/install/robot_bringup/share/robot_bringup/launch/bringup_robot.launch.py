@@ -76,11 +76,11 @@ def generate_launch_description():
             arguments=['-d', rviz_config_file],
             output='screen'
         ),
-    Node(
-        package='gap_follower',
-        executable='naive_gap_follower',
-        name='naive_gap_follower',
-        output='screen'
-    )
+    # Node(
+    #     package='gap_follower',
+    #     executable='naive_gap_follower',
+    #     name='naive_gap_follower',
+    #     output='screen'
+    # )
 
     ])

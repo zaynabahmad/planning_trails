@@ -24,6 +24,12 @@ setup(
             'optimized_gap_follower = gap_follower.optimized_gap_follower:main',
             'optimized_gap_follower2 = gap_follower.optimized_gap_follower2:main',
             'wallfollower = gap_follower.wallfollower:main',
+            'centerfollowing = gap_follower.centerfollowing:main',
+            'dualwallstatemachine = gap_follower.dualwallstatemachine:main',
+            'optimized_gapfolloweSM = gap_follower.optimized_gapfolloweSM:main',
+
+
+
 
         ],
     },

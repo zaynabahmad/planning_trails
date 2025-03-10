@@ -83,10 +83,23 @@ def generate_launch_description():
     #     output='screen'
     # )
 
-        Node(
+    #     Node(
+    #     package='gap_follower',
+    #     executable='wallfollower',
+    #     name='wallfollwer',
+    #     output='screen'
+    # )
+
+    #        Node(
+    #     package='gap_follower',
+    #     executable='centerfollowing',
+    #     name='centerfollowing',
+    #     output='screen'
+    # )
+           Node(
         package='gap_follower',
-        executable='wallfollower',
-        name='wallfollwer',
+        executable='dualwallstatemachine',
+        name='dualwallstatemachine',
         output='screen'
     )
 

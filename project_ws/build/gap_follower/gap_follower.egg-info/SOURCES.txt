@@ -9,9 +9,12 @@ setup.py
 ../../build/gap_follower/gap_follower.egg-info/top_level.txt
 ../../build/gap_follower/gap_follower.egg-info/zip-safe
 gap_follower/__init__.py
+gap_follower/centerfollowing.py
+gap_follower/dualwallstatemachine.py
 gap_follower/naive_gap_follower.py
 gap_follower/optimized_gap_follower.py
 gap_follower/optimized_gap_follower2.py
+gap_follower/optimized_gapfolloweSM.py
 gap_follower/wallfollower.py
 resource/gap_follower
 test/test_copyright.py

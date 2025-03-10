@@ -25,6 +25,7 @@
 /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/right_tire.stl
 /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/lds.stl
 /home/zaynap/project_ws/install/model_description/share/model_description//models/model.sdf
+/home/zaynap/project_ws/install/model_description/share/model_description//models/model2.sdf
 /home/zaynap/project_ws/install/model_description/share/model_description//rviz/model.rviz
 /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/package_run_dependencies/model_description
 /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/parent_prefix_path/model_description
